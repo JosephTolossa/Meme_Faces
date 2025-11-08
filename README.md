@@ -1,6 +1,6 @@
-# 😜 Freak Detector
+# 😜 Meme_Faces
 
-**Freak Detector** is a fun real-time AI app that uses your webcam to detect when you **stick your tongue out** 😝 or **close your eyes** 😴 — and flashes matching GIFs or images in a **separate reaction window** as long as you maintain that expression.
+**Meme faces** is a fun real-time AI app that uses your webcam to detect when you **stick your tongue out** 😝 or **close your eyes** 😴 — and flashes matching GIFs or images of memes in a **separate reaction window** as long as you maintain that expression.
 
 It’s powered by [MediaPipe Face Mesh](https://developers.google.com/mediapipe) for landmark detection and [OpenCV](https://opencv.org/) for video processing.
 
@@ -10,7 +10,7 @@ It’s powered by [MediaPipe Face Mesh](https://developers.google.com/mediapipe)
 
 > 👀 The app opens two windows:
 >
-> * **Freak Detector:** your live webcam feed
+> * **Meme faces:** your live webcam feed
 > * **Reaction:** shows GIFs or images based on your expression
 
 Press **Q** anytime to close both windows.
@@ -41,8 +41,8 @@ Press **Q** anytime to close both windows.
 Freak-Detector/
 │
 ├── assets/
-│   ├── tongue.gif
-│   ├── closed_eyes.gif
+│   ├── speed-meme.gif
+│   ├── flight-meme.gif
 │
 ├── output/
 │
