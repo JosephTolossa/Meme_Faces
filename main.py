@@ -12,8 +12,8 @@ output_dir = Path("output")
 output_dir.mkdir(exist_ok=True)
 
 # GIF paths
-tongue_gif = "assets/tongue.gif"
-closed_eyes_gif = "assets/closed_eyes.gif"
+tongue_gif = "assets/flight-meme.gif"
+closed_eyes_gif = "assets/speed-meme.gif"
 
 # Load GIFs
 def load_gif(path):
@@ -77,10 +77,10 @@ while True:
 
         if eyes_closed:
             reaction_mode = "eyes"
-            cv2.putText(frame, "hell nah", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
+            cv2.putText(frame, "speed", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
         elif tongue_out:
             reaction_mode = "tongue"
-            cv2.putText(frame, "freak of nature", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
+            cv2.putText(frame, "flight", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
         else:
             reaction_mode = None
             cv2.putText(frame, "Normal", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
@@ -99,7 +99,7 @@ while True:
         reaction_index += 1
     else:
         blank = np.zeros((200, 300, 3), dtype=np.uint8)
-        cv2.putText(blank, "Not Freaky", (30, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (200,200,200), 2)
+        cv2.putText(blank, "memes", (30, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (200,200,200), 2)
         cv2.imshow("Reaction", blank)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
